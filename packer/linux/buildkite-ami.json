@@ -60,7 +60,8 @@
     {
       "type": "shell",
       "inline": [
-        "rm /home/ec2-user/.ssh/authorized_keys"
+        "rm /home/ec2-user/.ssh/authorized_keys",
+        "sudo shred -u /etc/ssh/*_key /etc/ssh/*_key.pub"
       ]
     }
   ]
